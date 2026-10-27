@@ -2,7 +2,8 @@ name: GAM Sync v1
 
 on:
   workflow_dispatch:
-
+  schedule:
+    - cron: '*/30 * * * *'
 jobs:
   sync:
     runs-on: ubuntu-latest
